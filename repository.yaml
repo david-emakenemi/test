@@ -8,4 +8,4 @@ spec:
   interval: 1m
   type: "oci"
   # The repository URL, can be a HTTP/S or SSH address
-  url: oci://e4kpreview.azurecr.io/helm
+  url: oci://e4kpreview.azurecr.io/helm/az-e4k
