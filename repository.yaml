@@ -1,10 +1,11 @@
-apiVersion: source.toolkit.fluxcd.io/v1beta1
+apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
-  name: my-repository
-  namespace: default
+  name: e4k-repository
+  namespace: e4k
 spec:
   # The interval at which to check the upstream for updates
   interval: 1m
+  type: "oci"
   # The repository URL, can be a HTTP/S or SSH address
-  url: https://e4kpreview.blob.core.windows.net/helm/
+  url: oci://e4kpreview.azurecr.io/helm
