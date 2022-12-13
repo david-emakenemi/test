@@ -16,7 +16,7 @@ metadata:
   namespace: flux-system
 spec:
   releaseName: e4k
-  targetNamespace: default
+  targetNamespace: flux-system
   chart:
     spec:
       chart: az-e4k
@@ -25,3 +25,5 @@ spec:
         name: e4k-repo
       version: 0.1.0-amd64
   interval: 1m0s
+
+  
